@@ -1,97 +1,97 @@
-# Your AI Co-pilot
+AI Workplace Productivity Assistant
 
-Build a modern, responsive AI Workplace Productivity Assistant as a frontend-only SaaS web application.
+Project Overview
 
-Core Requirement
+AI Workplace Productivity Assistant is a modern, responsive web application designed to help professionals improve workplace productivity using AI-generated content.
 
-All email drafts, meeting summaries, action items, decisions, deadlines, and task schedules must be AI-generated dynamically from the user’s input. Do not use generic, hardcoded, or pre-written responses.
+The application provides AI-powered tools for generating professional emails, summarizing meeting notes, and planning daily or weekly tasks.
 
-Features
+This is a frontend-only application. It does not use a backend, database, authentication, or persistent data storage.
 
-1. Smart Email Generator
+Features Implemented
 
-User enters the email purpose/details.
+✉️ Smart Email Generator
 
-AI generates a complete professional email.
+* Generates professional emails using AI.
+* Supports Formal, Friendly, and Persuasive tones.
+* Allows users to edit generated emails.
+* Allows users to copy the final email.
 
-Tone options: Formal, Friendly, Persuasive.
+📝 Meeting Notes Summarizer
 
-Generated email is editable and copyable.
+* Summarizes lengthy meeting notes using AI.
+* Extracts:
+    * Action Items
+    * Decisions
+    * Deadlines
+    * Responsible persons when provided
+* Generated results can be edited and copied.
 
-2. Meeting Notes Summarizer
+📅 AI Task Planner
 
-User pastes lengthy meeting notes.
+* Generates daily or weekly schedules using AI.
+* Prioritizes tasks based on urgency, importance, and deadlines.
+* Produces an editable task schedule.
 
-AI generates a concise summary.
+🎨 User Interface
 
-AI extracts Action Items, Decisions, Responsible Persons, and Deadlines when available.
+* Modern SaaS-style dashboard.
+* Dark grey and charcoal colour scheme.
+* Sidebar navigation.
+* Responsive design for desktop, tablet, and mobile.
+* Loading, empty, and error states.
+* Editable AI-generated outputs.
 
-Output is editable and copyable.
+🤖 Responsible AI
 
-3. AI Task Planner
+The application reminds users to review AI-generated content for accuracy and appropriateness before using it for important workplace decisions or communications.
 
-User enters their tasks, priorities, and deadlines.
+Users are also advised not to enter confidential or sensitive information.
 
-AI creates a daily or weekly schedule.
+Technologies and Tools Used
 
-AI prioritizes tasks based on urgency, importance, and deadlines.
+* React – Frontend application framework
+* TypeScript – Application development
+* Vite – Development and build tool
+* Tailwind CSS – Styling and responsive design
+* AI API/AI Model – Dynamic AI-generated responses
+* Lovable – Application development platform
+* GitHub – Source code management and version control
 
-Generated schedule is editable.
+Setup Instructions
 
-UI
+1. Clone the repository
 
-Modern, clean SaaS dashboard.
+git clone YOUR_GITHUB_REPOSITORY_URL
 
-Dark grey/charcoal colour palette.
+2. Open the project
 
-Sidebar navigation: Dashboard, Email Generator, Meeting Summarizer, Task Planner.
+cd ai-workplace-productivity-assistant
 
-Fully responsive for desktop, tablet, and mobile.
+3. Install dependencies
 
-Use professional cards, forms, buttons, icons, and clear AI output sections.
+npm install
 
-Include loading, empty, and error states.
+4. Configure AI integration
 
-AI Integration
+If an AI API is required, add the required API configuration according to the AI provider’s instructions.
 
-Connect each feature to an AI model/API so responses are generated dynamically.
+Do not commit API keys or other secrets to GitHub.
 
-Use structured AI prompts tailored to each feature.
+5. Start the development server
 
-Never return fixed sample answers as the actual result.
-
-Clearly indicate when content is AI-generated.
-
-Data & Backend
-
-No backend, database, authentication, or persistent storage.
-
-Do not save user inputs or AI outputs.
-
-Keep the application lightweight and suitable for a prototype.
-
-Responsible AI
-
-Include a visible disclaimer:
-“AI-generated content may contain errors. Always review and verify outputs before using them for important workplace decisions or communications. Do not enter confidential or sensitive information.”
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/579cefa6-f231-4275-9974-76d0411f99a3).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
 npm run dev
-```
+
+Open the local URL provided by Vite in your browser.
+
+Data Privacy
+
+The application is designed as a frontend-only prototype and does not intentionally store user inputs or generated AI outputs in a database.
+
+Users should avoid entering confidential, personal, or sensitive workplace information.
+
+Project Status
+
+Status: Functional Prototype
+
+The project demonstrates AI-powered workplace productivity features through a clean and responsive SaaS-style interface.
